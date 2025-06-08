@@ -122,7 +122,7 @@ Criar um jogo da memória eletrônico com:
 
 ## 🚀 Como executar
 
-1. Clone este repositório:
+1. Clone esse repositório:
 
 ```bash
 git clone https://github.com/CarolineGrizante/MemoryGame-PIC18F4520.git

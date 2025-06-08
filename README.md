@@ -11,7 +11,7 @@ Criar um jogo da memória eletrônico com:
 -  **LEDs coloridos**
 -  **Botões de entrada**
 -  **Display de 7 segmentos**
-- **Músicas com buzzer**
+- **Músicas com buzzer** 
 -  **Sensor LDR para iniciar o jogo**
 
 ---

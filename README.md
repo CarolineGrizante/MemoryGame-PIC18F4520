@@ -119,3 +119,10 @@ Criar um jogo da memória eletrônico com:
 
 *Display de 7 segmentos aumentando a pontuação após resposta correta.*  
 ![Display atualizando pontuação](JogoPIC18F4520/PicSimLab-5.gif)
+
+## 🚀 Como executar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/CarolineGrizante/MemoryGame-PIC18F4520.git

@@ -79,45 +79,45 @@ Criar um jogo da memória eletrônico com:
 
 ### 🎮 Simulação no PicSimLab
 
-*Elementos utilizados.*  
+*Elementos utilizados*  
 ![Início do jogo com LDR](JogoPIC18F4520/PicSimLab-1.png)
 
-*Início do jogo ao cobrir o sensor LDR.*  
+*Início do jogo ao cobrir o sensor LDR*  
 ![Sequência de LEDs - Nível 1](JogoPIC18F4520/PicSimLab-2.png)
 
-*Sequência gerada até o nível 4.*  
+*Sequência gerada até o nível 4*  
 ![Sequência de LEDs - Nível 2](JogoPIC18F4520/PicSimLab-3.png)
 
 ---
 
 ### ⚙️ Configurações do Projeto
 
-*Conexão e uso do display para mostrar a pontuação.*  
+*Conexão e uso do display para mostrar a pontuação*  
 ![Configuração do Display de 7 segmentos](JogoPIC18F4520/ConfiguraçõesDisplay7.png)
 
-*LEDs conectados aos pinos RD0–RD3.*  
+*LEDs conectados aos pinos RD0–RD3*  
 ![Configuração dos LEDs](JogoPIC18F4520/ConfiguraçõesLeds.png)
 
-*Botões conectados aos pinos RB0–RB3.*  
+*Botões conectados aos pinos RB0–RB3*  
 ![Configuração dos Botões](JogoPIC18F4520/ConfiguraçõesBotões.png)
 
-*Buzzer para som de erro e vitória.*  
+*Buzzer para som de erro e vitória*  
 ![Configuração do Buzzer](JogoPIC18F4520/ConfiguraçõesBuzzer.png)
 
-*Volume do buzzer ajustado por potenciômetro.*  
+*Volume do buzzer ajustado por potenciômetro*  
 ![Controle de volume com Potenciômetro](JogoPIC18F4520/ConfiguraçõesPotenciômetro.png)
 
-*LDR utilizado para iniciar o jogo.*  
+*LDR utilizado para iniciar o jogo*  
 ![Sensor LDR como gatilho](JogoPIC18F4520/ConfiguraçõesLDR.png)
 
 ---
 
 ### 🌀 Animações (GIFs)
 
-*Visualização da placa.*  
+*Visualização da placa*  
 ![Sequência de LEDs animada](JogoPIC18F4520/PicSimLab-4.gif)
 
-*Display de 7 segmentos aumentando a pontuação após resposta correta.*  
+*Display de 7 segmentos aumentando a pontuação após resposta correta*  
 ![Display atualizando pontuação](JogoPIC18F4520/PicSimLab-5.gif)
 
 ## 🚀 Como executar

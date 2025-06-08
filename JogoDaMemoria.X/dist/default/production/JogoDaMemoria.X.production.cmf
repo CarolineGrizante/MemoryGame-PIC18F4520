@@ -1,0 +1,594 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\JogoDaMemoria.X.production.o
+cinit CODE 0 A78 A78 1A 1 2
+text0 CODE 0 AAC AAC 10 1 2
+text1 CODE 0 60C 60C 138 1 2
+text2 CODE 0 97A 97A 38 1 2
+text3 CODE 0 A38 A38 22 1 2
+text4 CODE 0 9B2 9B2 38 1 2
+text5 CODE 0 A5A A5A 1E 1 2
+text6 CODE 0 8C8 8C8 5E 1 2
+text7 CODE 0 926 926 54 1 2
+text8 CODE 0 A92 A92 1A 1 2
+text9 CODE 0 ACC ACC A 1 2
+nvCOMRAM COMRAM 1 28 28 1 1 1
+text10 CODE 0 AD6 AD6 A 1 2
+text11 CODE 0 ABC ABC 10 1 2
+text12 CODE 0 9EA 9EA 28 1 2
+text13 CODE 0 7F2 7F2 6C 1 2
+text14 CODE 0 85E 85E 6A 1 2
+text15 CODE 0 A12 A12 26 1 2
+text16 CODE 0 744 744 AE 1 2
+text17 CODE 0 AE0 AE0 6 1 2
+text18 CODE 0 AE6 AE6 6 1 2
+text19 CODE 0 AEC AEC 6 1 2
+cstackCOMRAM COMRAM 1 1 1 1A 1 1
+smallconst SMALLCONST 0 600 600 C 1 2
+bssCOMRAM COMRAM 1 1B 1B D 1 1
+config CONFIG 4 300000 300000 8 1 1
+$C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+init CODE 0 7FFC 7FFC 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 8 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-5FF 1
+CONST AF2-7FFB 1
+IDLOC 200000-200007 1
+SMALLCONST AF2-7FFB 1
+CODE 4-5FF 1
+CODE AF2-7FFB 1
+BIGRAM 29-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 29-7F 1
+CONFIG 300008-30000D 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST AF2-7FFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\JogoDaMemoria.X.production.o
+AEC text19 CODE >6:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+AEC text19 CODE >7:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+AF0 text19 CODE >8:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+AE6 text18 CODE >7:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+AE6 text18 CODE >8:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+AE8 text18 CODE >9:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+AEA text18 CODE >10:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+AE0 text17 CODE >12:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+AE0 text17 CODE >13:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+AE2 text17 CODE >14:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+AE4 text17 CODE >15:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+744 text16 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+744 text16 CODE >12:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+746 text16 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+754 text16 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+75C text16 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+760 text16 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+76E text16 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+776 text16 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+788 text16 CODE >20:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+78C text16 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+790 text16 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+796 text16 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+798 text16 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7A6 text16 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7BC text16 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7C4 text16 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7CA text16 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7D0 text16 CODE >31:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7E0 text16 CODE >32:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7E8 text16 CODE >33:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+7F0 text16 CODE >34:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+A12 text15 CODE >17:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+A14 text15 CODE >18:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+A36 text15 CODE >19:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\display.c
+85E text14 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+85E text14 CODE >119:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+86E text14 CODE >121:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+87C text14 CODE >122:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+88C text14 CODE >123:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+896 text14 CODE >124:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+8A0 text14 CODE >125:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+8B6 text14 CODE >128:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+8C6 text14 CODE >129:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+7F2 text13 CODE >11:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\rand.c
+7F2 text13 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\rand.c
+82E text13 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\rand.c
+85C text13 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\rand.c
+9EA text12 CODE >17:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+9EA text12 CODE >18:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+9EC text12 CODE >19:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+9FE text12 CODE >20:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+A10 text12 CODE >21:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+ABC text11 CODE >33:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+ABC text11 CODE >34:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AC0 text11 CODE >35:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AC6 text11 CODE >36:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+ACA text11 CODE >37:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AD6 text10 CODE >6:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+AD6 text10 CODE >7:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+ADA text10 CODE >8:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+ADE text10 CODE >9:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+ACC text9 CODE >6:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+ACC text9 CODE >7:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+ACE text9 CODE >8:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+AD0 text9 CODE >9:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+AD4 text9 CODE >10:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+A92 text8 CODE >23:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+A92 text8 CODE >24:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+A96 text8 CODE >25:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+A9A text8 CODE >26:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+A9E text8 CODE >27:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AA2 text8 CODE >28:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AA6 text8 CODE >30:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AAA text8 CODE >31:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+926 text7 CODE >10:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+926 text7 CODE >11:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+93A text7 CODE >12:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+94E text7 CODE >13:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+962 text7 CODE >14:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+976 text7 CODE >15:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+978 text7 CODE >16:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buttons.c
+8C8 text6 CODE >18:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+8C8 text6 CODE >19:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+8D0 text6 CODE >20:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+8D2 text6 CODE >21:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+8EA text6 CODE >22:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+8EC text6 CODE >23:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+904 text6 CODE >24:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+924 text6 CODE >25:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+A5A text5 CODE >12:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+A5A text5 CODE >13:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+A5C text5 CODE >14:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+A74 text5 CODE >15:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+A76 text5 CODE >16:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\buzzer.c
+9B2 text4 CODE >12:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9B4 text4 CODE >13:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9BE text4 CODE >14:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9C6 text4 CODE >15:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9C8 text4 CODE >16:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9D6 text4 CODE >17:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+9E8 text4 CODE >18:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+A38 text3 CODE >20:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+A38 text3 CODE >21:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+A58 text3 CODE >22:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\sensors.c
+97A text2 CODE >11:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+97C text2 CODE >12:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+998 text2 CODE >13:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+9AE text2 CODE >14:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+9B0 text2 CODE >15:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\leds.c
+60C text1 CODE >39:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+60C text1 CODE >40:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+624 text1 CODE >42:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+63A text1 CODE >44:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+640 text1 CODE >45:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+64E text1 CODE >46:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+664 text1 CODE >47:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+678 text1 CODE >49:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+67E text1 CODE >50:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+680 text1 CODE >51:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+684 text1 CODE >52:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+68A text1 CODE >51:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+69A text1 CODE >54:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6A0 text1 CODE >55:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6D0 text1 CODE >56:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6D4 text1 CODE >57:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6DC text1 CODE >60:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6F0 text1 CODE >62:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6F4 text1 CODE >63:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+6FA text1 CODE >65:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+70A text1 CODE >66:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+70C text1 CODE >67:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+724 text1 CODE >68:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+728 text1 CODE >70:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+742 text1 CODE >73:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\game.c
+AAC text0 CODE >16:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\main.c
+AAC text0 CODE >17:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\main.c
+AB0 text0 CODE >19:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\main.c
+AB0 text0 CODE >20:C:\Users\Pichau\MPLABXProjects\JogoDaMemoria.X\main.c
+A78 cinit CODE >2139:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A78 cinit CODE >2141:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A78 cinit CODE >2144:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A78 cinit CODE >2157:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A7C cinit CODE >2158:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A7E cinit CODE >2159:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A7E cinit CODE >2160:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A80 cinit CODE >2161:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A82 cinit CODE >2162:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A84 cinit CODE >2168:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A84 cinit CODE >2171:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A86 cinit CODE >2172:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A88 cinit CODE >2173:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A8A cinit CODE >2174:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A8C cinit CODE >2175:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+A8E cinit CODE >2176:C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\JogoDaMemoria.X.production.o
+__Hspace_0 8000 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Hspace_1 29 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Hspace_4 600008 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__end_of_digit_map 60B 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+display_show_digit@digit 8 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\JogoDaMemoria.X.production.o
+__mediumconst 600 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+_game_reset ABC 0 CODE 0 text11 dist/default/production\JogoDaMemoria.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\JogoDaMemoria.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\JogoDaMemoria.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+_LATC F8B 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+_main AAC 0 CODE 0 text0 dist/default/production\JogoDaMemoria.X.production.o
+_rand 7F2 0 CODE 0 text13 dist/default/production\JogoDaMemoria.X.production.o
+_seed 24 0 COMRAM 1 bssCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+start 7FFC 0 CODE 0 init C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+_digit_map 601 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+?___lmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\JogoDaMemoria.X.production.o
+___awmod@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_leds_init AE0 0 CODE 0 text10 dist/default/production\JogoDaMemoria.X.production.o
+buzzer_play_error@i 3 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\JogoDaMemoria.X.production.o
+__end_of_game_reset ACC 0 CODE 0 text11 dist/default/production\JogoDaMemoria.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\JogoDaMemoria.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+_leds_init AD6 0 CODE 0 text10 dist/default/production\JogoDaMemoria.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\JogoDaMemoria.X.production.o
+__end_of___lmul 8C8 0 CODE 0 text14 dist/default/production\JogoDaMemoria.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\JogoDaMemoria.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\JogoDaMemoria.X.production.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\JogoDaMemoria.X.production.o
+__end_of___awmod 7F2 0 CODE 0 text16 dist/default/production\JogoDaMemoria.X.production.o
+leds_flash@index 3 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+game_loop@i_106 19 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\JogoDaMemoria.X.production.o
+start_initialization A78 0 CODE 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+generate_sequence@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\JogoDaMemoria.X.production.o
+_TRISAbits F92 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_sensors_init ACC 0 CODE 0 text9 dist/default/production\JogoDaMemoria.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_GO_nDONE 7E11 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__end_of_buzzer_init AEC 0 CODE 0 text18 dist/default/production\JogoDaMemoria.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\JogoDaMemoria.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\JogoDaMemoria.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\JogoDaMemoria.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\JogoDaMemoria.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\JogoDaMemoria.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\JogoDaMemoria.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\JogoDaMemoria.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\JogoDaMemoria.X.production.o
+__Hidloc 0 0 ABS 0 idloc dist/default/production\JogoDaMemoria.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\JogoDaMemoria.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\JogoDaMemoria.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\JogoDaMemoria.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\JogoDaMemoria.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\JogoDaMemoria.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\JogoDaMemoria.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\JogoDaMemoria.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\JogoDaMemoria.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\JogoDaMemoria.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\JogoDaMemoria.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\JogoDaMemoria.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\JogoDaMemoria.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\JogoDaMemoria.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\JogoDaMemoria.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\JogoDaMemoria.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\JogoDaMemoria.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\JogoDaMemoria.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\JogoDaMemoria.X.production.o
+__Hconfig 300008 0 CONFIG 4 config dist/default/production\JogoDaMemoria.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\JogoDaMemoria.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\JogoDaMemoria.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\JogoDaMemoria.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\JogoDaMemoria.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\JogoDaMemoria.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\JogoDaMemoria.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\JogoDaMemoria.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\JogoDaMemoria.X.production.o
+__Lidloc 0 0 ABS 0 idloc dist/default/production\JogoDaMemoria.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\JogoDaMemoria.X.production.o
+_display_init AE0 0 CODE 0 text17 dist/default/production\JogoDaMemoria.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\JogoDaMemoria.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\JogoDaMemoria.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\JogoDaMemoria.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\JogoDaMemoria.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\JogoDaMemoria.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\JogoDaMemoria.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\JogoDaMemoria.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\JogoDaMemoria.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\JogoDaMemoria.X.production.o
+__Hinit 8000 0 CODE 0 init dist/default/production\JogoDaMemoria.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\JogoDaMemoria.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\JogoDaMemoria.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\JogoDaMemoria.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\JogoDaMemoria.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\JogoDaMemoria.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\JogoDaMemoria.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\JogoDaMemoria.X.production.o
+__Linit 7FFC 0 CODE 0 init dist/default/production\JogoDaMemoria.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\JogoDaMemoria.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\JogoDaMemoria.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\JogoDaMemoria.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\JogoDaMemoria.X.production.o
+___lmul 85E 0 CODE 0 text14 dist/default/production\JogoDaMemoria.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\JogoDaMemoria.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\JogoDaMemoria.X.production.o
+__S0 8000 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__S1 29 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+game_loop@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_sensors_init AD6 0 CODE 0 text9 dist/default/production\JogoDaMemoria.X.production.o
+__pnvCOMRAM 28 0 COMRAM 1 nvCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\JogoDaMemoria.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\JogoDaMemoria.X.production.o
+_current_level 28 0 COMRAM 1 nvCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\JogoDaMemoria.X.production.o
+__end_of_ldr_dark_detected A5A 0 CODE 0 text3 dist/default/production\JogoDaMemoria.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\JogoDaMemoria.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\JogoDaMemoria.X.production.o
+__activetblptr 1 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\JogoDaMemoria.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\JogoDaMemoria.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\JogoDaMemoria.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\JogoDaMemoria.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\JogoDaMemoria.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\JogoDaMemoria.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\JogoDaMemoria.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\JogoDaMemoria.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\JogoDaMemoria.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\JogoDaMemoria.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\JogoDaMemoria.X.production.o
+___awmod@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+_buzzer_play_success A5A 0 CODE 0 text5 dist/default/production\JogoDaMemoria.X.production.o
+game_loop@btn 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_display_init AE6 0 CODE 0 text17 dist/default/production\JogoDaMemoria.X.production.o
+__ptext10 AD6 0 CODE 0 text10 dist/default/production\JogoDaMemoria.X.production.o
+__ptext11 ABC 0 CODE 0 text11 dist/default/production\JogoDaMemoria.X.production.o
+__ptext12 9EA 0 CODE 0 text12 dist/default/production\JogoDaMemoria.X.production.o
+__ptext13 7F2 0 CODE 0 text13 dist/default/production\JogoDaMemoria.X.production.o
+__ptext14 85E 0 CODE 0 text14 dist/default/production\JogoDaMemoria.X.production.o
+__ptext15 A12 0 CODE 0 text15 dist/default/production\JogoDaMemoria.X.production.o
+__ptext16 744 0 CODE 0 text16 dist/default/production\JogoDaMemoria.X.production.o
+__ptext17 AE0 0 CODE 0 text17 dist/default/production\JogoDaMemoria.X.production.o
+__ptext18 AE6 0 CODE 0 text18 dist/default/production\JogoDaMemoria.X.production.o
+__ptext19 AEC 0 CODE 0 text19 dist/default/production\JogoDaMemoria.X.production.o
+___awmod 744 0 CODE 0 text16 dist/default/production\JogoDaMemoria.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\JogoDaMemoria.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\JogoDaMemoria.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\JogoDaMemoria.X.production.o
+___lmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+?_rand D 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\JogoDaMemoria.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\JogoDaMemoria.X.production.o
+_LATEbits F8D 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\JogoDaMemoria.X.production.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\JogoDaMemoria.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\JogoDaMemoria.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\JogoDaMemoria.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+stackhi 0 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__end_of_generate_sequence A12 0 CODE 0 text12 dist/default/production\JogoDaMemoria.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\JogoDaMemoria.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\JogoDaMemoria.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\JogoDaMemoria.X.production.o
+_adc_read 9B2 0 CODE 0 text4 dist/default/production\JogoDaMemoria.X.production.o
+__end_of_buzzer_play_error 926 0 CODE 0 text6 dist/default/production\JogoDaMemoria.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__pbssCOMRAM 1B 0 COMRAM 1 bssCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_adc_read 9EA 0 CODE 0 text4 dist/default/production\JogoDaMemoria.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+end_of_initialization A84 0 CODE 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\JogoDaMemoria.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\JogoDaMemoria.X.production.o
+_sequence 1B 0 COMRAM 1 bssCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+_ldr_dark_detected A38 0 CODE 0 text3 dist/default/production\JogoDaMemoria.X.production.o
+?___awmod 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\JogoDaMemoria.X.production.o
+___awmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_game_init AAC 0 CODE 0 text8 dist/default/production\JogoDaMemoria.X.production.o
+__end_of_game_loop 744 0 CODE 0 text1 dist/default/production\JogoDaMemoria.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\JogoDaMemoria.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\JogoDaMemoria.X.production.o
+adc_read@channel 5 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__pcinit A78 0 CODE 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+_buttons_init AEC 0 CODE 0 text19 dist/default/production\JogoDaMemoria.X.production.o
+_buttons_read 926 0 CODE 0 text7 dist/default/production\JogoDaMemoria.X.production.o
+__ptext0 AAC 0 CODE 0 text0 dist/default/production\JogoDaMemoria.X.production.o
+__ptext1 60C 0 CODE 0 text1 dist/default/production\JogoDaMemoria.X.production.o
+__ptext2 97A 0 CODE 0 text2 dist/default/production\JogoDaMemoria.X.production.o
+__ptext3 A38 0 CODE 0 text3 dist/default/production\JogoDaMemoria.X.production.o
+__ptext4 9B2 0 CODE 0 text4 dist/default/production\JogoDaMemoria.X.production.o
+__ptext5 A5A 0 CODE 0 text5 dist/default/production\JogoDaMemoria.X.production.o
+__ptext6 8C8 0 CODE 0 text6 dist/default/production\JogoDaMemoria.X.production.o
+__ptext7 926 0 CODE 0 text7 dist/default/production\JogoDaMemoria.X.production.o
+__ptext8 A92 0 CODE 0 text8 dist/default/production\JogoDaMemoria.X.production.o
+__ptext9 ACC 0 CODE 0 text9 dist/default/production\JogoDaMemoria.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\JogoDaMemoria.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\JogoDaMemoria.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\JogoDaMemoria.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__end_of_buzzer_play_success A78 0 CODE 0 text5 dist/default/production\JogoDaMemoria.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\JogoDaMemoria.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\JogoDaMemoria.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\JogoDaMemoria.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\JogoDaMemoria.X.production.o
+_game_init A92 0 CODE 0 text8 dist/default/production\JogoDaMemoria.X.production.o
+_game_loop 60C 0 CODE 0 text1 dist/default/production\JogoDaMemoria.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+_leds_flash 97A 0 CODE 0 text2 dist/default/production\JogoDaMemoria.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\Pichau\AppData\Local\Temp\xcAsf6c.\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\JogoDaMemoria.X.production.o
+__end_of__initialization A84 0 CODE 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+___awmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\JogoDaMemoria.X.production.o
+__end_of_display_show_digit A38 0 CODE 0 text15 dist/default/production\JogoDaMemoria.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\JogoDaMemoria.X.production.o
+_generate_sequence 9EA 0 CODE 0 text12 dist/default/production\JogoDaMemoria.X.production.o
+___lmul@product 9 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+___lmul@multiplicand 5 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+_buzzer_play_error 8C8 0 CODE 0 text6 dist/default/production\JogoDaMemoria.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+__end_of_main ABC 0 CODE 0 text0 dist/default/production\JogoDaMemoria.X.production.o
+__end_of_rand 85E 0 CODE 0 text13 dist/default/production\JogoDaMemoria.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\JogoDaMemoria.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\JogoDaMemoria.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\JogoDaMemoria.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\JogoDaMemoria.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\JogoDaMemoria.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\JogoDaMemoria.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\JogoDaMemoria.X.production.o
+__end_of_buttons_init AF2 0 CODE 0 text19 dist/default/production\JogoDaMemoria.X.production.o
+__end_of_buttons_read 97A 0 CODE 0 text7 dist/default/production\JogoDaMemoria.X.production.o
+_display_show_digit A12 0 CODE 0 text15 dist/default/production\JogoDaMemoria.X.production.o
+?_adc_read 1 0 COMRAM 1 cstackCOMRAM dist/default/production\JogoDaMemoria.X.production.o
+_buzzer_init AE6 0 CODE 0 text18 dist/default/production\JogoDaMemoria.X.production.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/default/production\JogoDaMemoria.X.production.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/default/production\JogoDaMemoria.X.production.o
+__initialization A78 0 CODE 0 cinit dist/default/production\JogoDaMemoria.X.production.o
+__end_of_leds_flash 9B2 0 CODE 0 text2 dist/default/production\JogoDaMemoria.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\JogoDaMemoria.X.production.o
+__Hsmallconst 60C 0 SMALLCONST 0 smallconst dist/default/production\JogoDaMemoria.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\JogoDaMemoria.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\JogoDaMemoria.X.production.o
+__Hintcode 8 0 CODE 0 intcode dist/default/production\JogoDaMemoria.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 60C 60C 4E6 1
+cstackCOMRAM 1 1 1 28 1
+init 0 7FFC 7FFC 4 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 C 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

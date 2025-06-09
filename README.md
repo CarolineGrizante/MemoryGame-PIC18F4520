@@ -1,4 +1,4 @@
-# 🧠 Jogo da Memória com PIC18F4520
+# 🧠 Jogo da Memória com PIC18F4520 
 
 Um projeto interativo de jogo da memória desenvolvido com o microcontrolador **PIC18F4520**, usando **MPLAB X IDE + XC8** e simulado na **placa McLab2 do PicSimLab**.
 
